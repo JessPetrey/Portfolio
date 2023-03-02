@@ -6,8 +6,8 @@ const Home = () => {
         <div className="hero min-h-screen">
             <div className="hero-content flex-col lg:flex-row-reverse">
                 <div className='hero-content flex-col lg:flex-row-reverse'>
-                    <img className=" grayscale max-w-md rounded-lg shadow-2xl" src={require('../images/Jess-selfie.jpeg')} alt='Jess Petrey'
-                        onMouseOver={e => e.currentTarget.className='grayscale-0 max-w-md rounded-lg shadow-2xl'} onMouseOut={e => e.currentTarget.className='grayscale max-w-md rounded-lg shadow-2xl'} />
+                    <img className=" grayscale  max-w-md rounded-lg shadow-2xl hover:grayscale-0 transition duration-700 delay-150"
+                        src={require('../images/Jess-selfie.jpeg')} alt='Jess Petrey' />
                 </div>
                 <div>
                     <h1 className="text-5xl font-bold">Hi! I'm Jess</h1>
