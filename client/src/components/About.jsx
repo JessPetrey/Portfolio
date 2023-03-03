@@ -31,7 +31,7 @@ const About = () => {
                         Currently I am honing the skills acquired in Coding Dojo, 
                         and about to begin my final stack - Java! - so stay tuned 
                         to see what's next!</p>
-                <buton className='btn btn-wide' onClick={ () => scrollTo({top:2700, behavior: 'smooth'})} >Keep in Touch</buton>
+                <button className='btn btn-wide' onClick={ () => scrollTo({top:2700, behavior: 'smooth'})} >Keep in Touch</button>
                 </div>
             </div>
         </div>

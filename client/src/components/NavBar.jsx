@@ -12,9 +12,10 @@ const NavBar = () => {
                 <div className="flex-none">
                     <ul className="menu menu-horizontal px-1">
                         <li><button onClick={ () => scrollTo({ behavior: 'smooth'}) }>Home</button></li>
-                        <li><button onClick={ () => scrollTo({top: 900, behavior: 'smooth'}) }>About</button></li>
-                        <li><button onClick={ () => scrollTo({top: 1800, behavior: 'smooth'}) }>Work</button></li>
-                        <li><button onClick={ () => scrollTo({top: 2700, behavior: 'smooth'}) }>Contact</button></li>
+                        <li><button onClick={ () => scrollTo({top: 891, behavior: 'smooth'}) }>About</button></li>
+                        <li><button onClick={ () => scrollTo({top: 1800, behavior: 'smooth'}) }>Toolbox</button></li>
+                        <li><button onClick={ () => scrollTo({top: 2700, behavior: 'smooth'}) }>Work</button></li>
+                        <li><button onClick={ () => scrollTo({top: 3600, behavior: 'smooth'}) }>Contact</button></li>
                     </ul>
                 </div>
             </div>
