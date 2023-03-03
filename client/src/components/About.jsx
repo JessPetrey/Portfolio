@@ -9,11 +9,11 @@ const About = () => {
         <div className="hero min-h-screen">
             <div className='hero-content flex-col sm:flex-row gap-20 prose'>
                 <div>
-                    <h3 className='text-xl'>About</h3>
+                    <h3 className='text-lg'>ABOUT</h3>
                     <h2 className='text-2xl'>Who is Jess?</h2>
                     <div>
                         <img src={require('../images/jess-blue.jpeg')} alt='Jess Petrey'
-                            className='w-40 rounded-full shadow-2xl grayscale'></img>
+                            className='w-40 rounded-full shadow-2xl grayscale hover:grayscale-0 transition duration-700 delay-150'></img>
                     </div>
                 </div>
                 <div className='max-w-sm sm:mt-48'>

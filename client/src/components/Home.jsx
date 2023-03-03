@@ -3,7 +3,7 @@ import { useScrollTo } from 'react-use-window-scroll'
 
 
 const Home = () => {
-    const funFacts = ['Fiber Artist', 'optimist', 'cat servant', 'always cold', 'master queso consumer', 'occasional gamer', 'snake owner']
+    const funFacts = ['Fiber Artist', 'Optimist', 'Cat Servant', 'Cancer Survivor', 'Master of Queso', 'Cozy Gamer', 'Snake Owner']
     const [index, setIndex] = useState(0)
     const scrollTo = useScrollTo()
 
