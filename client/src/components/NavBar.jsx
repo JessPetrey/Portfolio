@@ -13,8 +13,8 @@ const NavBar = () => {
                     <ul className="menu menu-horizontal px-1">
                         <li><button onClick={ () => scrollTo({ behavior: 'smooth'}) }>Home</button></li>
                         <li><button onClick={ () => scrollTo({top: 900, behavior: 'smooth'}) }>About</button></li>
-                        <li><button onClick={ () => scrollTo({top: 1100, behavior: 'smooth'}) }>Work</button></li>
-                        <li><button onClick={ () => scrollTo({top: 1100, behavior: 'smooth'}) }>Contact</button></li>
+                        <li><button onClick={ () => scrollTo({top: 1800, behavior: 'smooth'}) }>Work</button></li>
+                        <li><button onClick={ () => scrollTo({top: 2700, behavior: 'smooth'}) }>Contact</button></li>
                     </ul>
                 </div>
             </div>
