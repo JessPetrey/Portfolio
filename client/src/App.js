@@ -3,11 +3,11 @@ import Footer from './components/Footer';
 import Home from './components/Home';
 import NavBar from './components/NavBar';
 
-function App() {
+function App(props) {
   return (
     <div data-theme='garden'>
       <NavBar />
-      <Home />
+      <Home Home={<Home/>}/>
       <About />
 
       <Footer />
