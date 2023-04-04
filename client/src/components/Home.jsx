@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react'
 import { useScrollTo } from 'react-use-window-scroll'
 
 
-const Home = () => {
-    const funFacts = ['Fiber Artist', 'Optimist', 'Cat Servant', 'Cancer Survivor', 'Master of Queso', 'Cozy Gamer', 'Snake Owner']
+const Home = (props) => {
+    const funFacts = ['Fiber Artist', 'Optimist', 'Cat Servant', 'Cancer Survivor', 'Master of Queso', 'Cozy Gamer', 'Introvert']
     const [index, setIndex] = useState(0)
     const scrollTo = useScrollTo()
 
@@ -16,13 +16,13 @@ const Home = () => {
     }, [funFacts.length, index])
 
     return (
-        <div className="hero min-h-screen">
+        <div className="hero min-h-screen" ref={props.sectionRef}>
             <div className="hero-content flex-col md:flex-row gap-20">
                 <div>
                     <h1 className="text-6xl font-bold">Hi! I'm Jess</h1>
                     <p className="py-6 text-2xl ">I'm a Full Stack Developer <br />
                         <span>and {funFacts[index]}</span></p>
-                    <button className="btn btn-primary animate-wiggle" onClick={() => scrollTo({ top: 2700, behavior: 'smooth' })}>Hire me</button>
+                    <button className="btn btn-primary animate-wiggle" onClick={() => scrollTo({ bottom: 0, behavior: 'smooth' })}>Hire me</button>
                 </div>
                 <img className=" grayscale max-w-sm max-h-sm rounded-lg shadow-2xl hover:grayscale-0 transition duration-700 delay-150"
                     src={require('../images/Jess-selfie.jpeg')} alt='Jess Petrey' />

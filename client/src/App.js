@@ -4,19 +4,27 @@ import Footer from './components/Footer';
 import Home from './components/Home';
 import NavBar from './components/NavBar';
 import Toolbox from './components/Toolbox';
-import Work from './components/Work';
+import Projects from './components/Projects';
+import { useRef } from "react";
 
 
 function App() {
+  const sectionRefs = [
+    useRef(null),
+    useRef(null),
+    useRef(null),
+    useRef(null),
+    useRef(null)
+  ]
 
   return (
-    <div data-theme='bumblebee'>
-      <NavBar />
-      <Home />
-      <About />
-      <Toolbox />
-      <Work />
-      <Contact />
+    <div data-theme='cupcake'>
+      <NavBar sectionRefs={sectionRefs}/>
+      <Home sectionRef={sectionRefs[0]}/>
+      <About sectionRef={sectionRefs[1]}/>
+      <Toolbox sectionRef={sectionRefs[2]}/>
+      <Projects sectionRef={sectionRefs[3]}/>
+      <Contact sectionRef={sectionRefs[4]}/>
       <Footer />
     </div>
   );

@@ -2,12 +2,12 @@ import React from 'react'
 import {useScrollTo} from 'react-use-window-scroll'
 
 
-const About = () => {
+const About = (props) => {
     const scrollTo = useScrollTo()
 
     return (
-        <div className="hero min-h-screen">
-            <div className='hero-content flex-col sm:flex-row gap-20 prose'>
+        <div className="hero min-h-screen" >
+            <div className='hero-content flex-col sm:flex-row gap-20 prose'  ref={props.sectionRef}>
                 <div>
                     <h3 className='text-lg'>ABOUT</h3>
                     <h2 className='text-2xl'>Who is Jess?</h2>
