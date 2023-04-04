@@ -1,6 +1,22 @@
-import React from 'react'
+import React, { useRef } from 'react'
+import emailjs, { init } from "@emailjs/browser";
 
 const Contact = (props) => {
+    init("user_xxxxxxxxxxxxxxxxxxx");
+    const form = useRef();
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        emailjs.sendForm("service_dfsa0qo", "template_re8ft6h", form.current, "IV7bzbNOADkc3p_XA")
+            .then((result) => {
+                alert("Message Sent Successfully");
+                console.log(result.text);
+            },
+                (error) => {
+                    console.log(error.text);
+                }
+            );
+    };
     return (
         <div className="hero min-h-screen">
             <div className='hero-content gap-20 prose' ref={props.sectionRef}>
@@ -9,10 +25,11 @@ const Contact = (props) => {
                     <h2 className='text-2xl'>Get In Touch</h2>
                     <div>
                         <p>I'm always looking for feedback, and to meet others who code. Can't wait to meet you!</p>
-                        <form action="" className='form-control'>
-                            <input type="email" name="email" placeholder='Email' className='my-2'/>
+                        <p>Please include your email address, so I can get back to you.</p>
+                        <form ref={form} onSubmit={handleSubmit} className='form-control'>
+                            <input type="text" name="name" placeholder='Your Name' className='my-2' />
                             <textarea name="message" cols="30" rows="8" placeholder='Message'></textarea>
-                            <button type="submit" className='btn'>Send</button>
+                            <button type="submit" className='btn'>Send Email</button>
                         </form>
                     </div>
                 </div>
