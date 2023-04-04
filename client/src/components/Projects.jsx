@@ -7,7 +7,7 @@ const Projects = (props) => {
     return (
         <div className="hero min-h-screen" ref={props.sectionRef}>
             <div className='hero-content flex-col sm:flex-row gap-20 prose'>
-                <div ref={aboutSection}>
+                <div>
                     <h3 className='text-lg'>PROJECTS</h3>
                     <div>
 

@@ -22,10 +22,10 @@ const Home = (props) => {
                     <h1 className="text-6xl font-bold">Hi! I'm Jess</h1>
                     <p className="py-6 text-2xl ">I'm a Full Stack Developer <br />
                         <span>and {funFacts[index]}</span></p>
-                    <button className="btn btn-primary animate-wiggle" onClick={() => scrollTo({ bottom: 0, behavior: 'smooth' })}>Hire me</button>
+                    <button className="btn btn-primary animate-wiggle" onClick={() => scrollTo({ top: 3000, behavior: 'smooth' })}>Hire me</button>
                 </div>
                 <img className=" grayscale max-w-sm max-h-sm rounded-lg shadow-2xl hover:grayscale-0 transition duration-700 delay-150"
-                    src={require('../images/Jess-selfie.jpeg')} alt='Jess Petrey' />
+                    src={require('../images/Jess-selfie.jpeg')} alt='Jessica Petrey' />
             </div>
         </div>
     )

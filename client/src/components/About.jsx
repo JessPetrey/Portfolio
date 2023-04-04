@@ -7,7 +7,7 @@ const About = (props) => {
 
     return (
         <div className="hero min-h-screen" >
-            <div className='hero-content flex-col sm:flex-row gap-20 prose'  ref={props.sectionRef}>
+            <div className='hero-content flex-col md:flex-row gap-20 prose'  ref={props.sectionRef}>
                 <div>
                     <h3 className='text-lg'>ABOUT</h3>
                     <h2 className='text-2xl'>Who is Jess?</h2>
@@ -31,7 +31,7 @@ const About = (props) => {
                         Currently I am honing the skills acquired in Coding Dojo, 
                         and about to begin my final stack - Java! - so stay tuned 
                         to see what's next!</p>
-                <button className='btn btn-wide' onClick={ () => scrollTo({top:2700, behavior: 'smooth'})} >Keep in Touch</button>
+                <button className='btn btn-wide' onClick={ () => scrollTo({top:3000, behavior: 'smooth'})} >Keep in Touch</button>
                 </div>
             </div>
         </div>
