@@ -24,7 +24,7 @@ const Home = (props) => {
                         <span>and {funFacts[index]}</span></p>
                     <button className="btn btn-primary animate-wiggle" onClick={() => scrollTo({ top: 3000, behavior: 'smooth' })}>Hire me</button>
                 </div>
-                <img className=" grayscale max-w-sm max-h-sm rounded-lg shadow-2xl hover:grayscale-0 transition duration-700 delay-150"
+                <img className=" grayscale max-w-xs max-h-sm rounded-lg shadow-2xl hover:grayscale-0 transition duration-700 delay-150"
                     src={require('../images/Jess-selfie.jpeg')} alt='Jessica Petrey' />
             </div>
         </div>
