@@ -2,12 +2,12 @@ import React from 'react'
 
 const Toolbox = (props) => {
     return (
-        <div className="hero min-h-screen" ref={props.sectionRef}>
-            <div className='hero-content flex-col md:flex-row gap-10 prose'>
+        <div className="hero-content min-h-screen" ref={props.sectionRef}>
+            <div className='hero-content flex-col md:flex-row gap-20 prose'>
                 <div>
                     <h3 className='text-lg'>SKILLS & TOOLS</h3>
                     <h2 className='text-2xl'>My Toolbox and Things I Can Do</h2>
-                    <div className='flex flex-row flex-wrap mt-10 max-w-lg'>
+                    <div className='flex flex-row flex-wrap max-w-md'>
                         <div className='text-center px-5'>
                             <i className=" text-6xl fa-brands fa-java"></i>
                             <p>Java</p>
@@ -36,25 +36,13 @@ const Toolbox = (props) => {
                             <i className=" text-6xl fa-brands fa-react"></i>
                             <p>React</p>
                         </div>
-                        <div className='text-center px-5'>
-                            <i className=" text-6xl fa-brands fa-git"></i>
-                            <p>Git</p>
-                        </div>
-                        <div className='text-center px-5'>
-                            <i className=" text-6xl fa-brands fa-github"></i>
-                            <p>Github</p>
-                        </div>
-                        <div className='text-center px-5'>
-                            <i className=" text-6xl fa-solid fa-terminal"></i>
-                            <p>Terminal</p>
-                        </div>
                     </div>
-                    <div className='mt-5 text-center'>
+                    <div className='mt-5 text-center max-w-xs'>
                         <h3>Also proficient in:</h3>
-                        <p>MongoDB, Mongoose, RESTful APIs, VS Code, Spring Tool Suite</p>
+                        <p>SQL, Express, MongoDB, Mongoose, RESTful APIs, VS Code, Spring Tool Suite</p>
                     </div>
                 </div>
-                <div>
+                <div className=' max-w-xs'>
                     <h2 className='text-xl'>Currently working on: </h2>
                     <p>Improving my skills in, and understanding of Javascript and React.</p>
                     <a href='https://github.com/JessPetrey' className='btn btn-primary'>Check out my Github</a>

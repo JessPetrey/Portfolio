@@ -16,7 +16,7 @@ const About = (props) => {
                             className='w-40 rounded-full shadow-2xl grayscale hover:grayscale-0 transition duration-700 delay-150'></img>
                     </div>
                 </div>
-                <div className='max-w-sm sm:mt-48'>
+                <div className='max-w-sm sm:mt-40'>
                     <h3>Curiosity-driven Developer</h3>
                     <p>I'm  passionate about bringing together the technical and 
                         visual aspects of engineering - User experience, smooth 
