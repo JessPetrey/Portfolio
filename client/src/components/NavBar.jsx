@@ -1,5 +1,4 @@
 import React from 'react'
-import { useScrollTo } from 'react-use-window-scroll'
 
 import '../index.css'
 
