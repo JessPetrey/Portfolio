@@ -9,7 +9,7 @@ const Toolbox = (props) => {
                     <h2 className='text-2xl'>My Toolbox and Things I Can Do</h2>
                     <div className='flex flex-row flex-wrap max-w-md'>
                         <div className='text-center px-5'>
-                            <i className=" text-6xl fa-brands fa-java"></i>
+                            <i className="text-6xl fa-brands fa-java"></i>
                             <p>Java</p>
                         </div>
                         <div className='text-center px-5'>
