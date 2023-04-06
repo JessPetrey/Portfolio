@@ -16,7 +16,7 @@ const Home = (props) => {
 
     return (
         <div className="hero min-h-screen" ref={props.sectionRef}>
-            <div className="hero-content flex-col md:flex-row gap-20">
+            <div className="hero-content flex-col md:flex-row gap-20 pt-32">
                 <div>
                     <h1 className="text-6xl font-bold">Hi! I'm Jess</h1>
                     <p className="py-6 text-2xl ">I'm a Full Stack Developer <br />
