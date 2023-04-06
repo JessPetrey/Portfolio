@@ -42,7 +42,7 @@ const About = (props) => {
                         to be self-sufficient, solving problems with code.</p>
                     <p>I'm happiest when creating or working through a new challenge.
                         Currently, I am honing my skills while looking for work.</p>
-                    <button className='btn btn-wide' onClick={() => scrollTo({ top: 4000, behavior: 'smooth' })} >Get in Touch</button>
+                    <button className='btn btn-wide' onClick={() => scrollTo({ top: 10000, behavior: 'smooth' })} >Get in Touch</button>
                 </div>
             </div>
         </div>
