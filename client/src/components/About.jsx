@@ -24,9 +24,9 @@ const About = (props) => {
                     <h2 className='text-2xl'>Who is Jess?</h2>
                     <div>
                         <img src={require('../images/jess-blue.jpeg')} alt='Jess Petrey'
-                            className='w-40 rounded-full shadow-2xl grayscale hover:grayscale-0 transition duration-700 delay-150'></img>
+                            className='w-44 rounded-full shadow-2xl grayscale hover:grayscale-0 transition duration-700 delay-150'></img>
                     </div>
-                    <p className="py-3 text-center font-bold">{funFacts[index]}</p>
+                    <p className="py-3 text-center btn btn-accent bg-opacity-70">{funFacts[index]}</p>
                 </div>
                 <div className='max-w-sm sm:mt-40'>
                     <h3>Curiosity-driven Developer</h3>
