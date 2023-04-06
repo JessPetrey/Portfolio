@@ -19,12 +19,12 @@ function App() {
 
   return (
     <div data-theme='cupcake'>
-      <NavBar sectionRefs={sectionRefs}/>
+      <NavBar sectionRefs={sectionRefs} />
       <Home sectionRef={sectionRefs[0]}/>
-      <About sectionRef={sectionRefs[1]}/>
+      <About sectionRef={sectionRefs[1]} contact={sectionRefs[4]}/>
       <Toolbox sectionRef={sectionRefs[2]}/>
       <Projects sectionRef={sectionRefs[3]}/>
-      <Contact sectionRef={sectionRefs[4]}/>
+      <Contact contact={sectionRefs[4]}/>
       <Footer />
     </div>
   );
