@@ -21,7 +21,7 @@ const Home = (props) => {
                     <h1 className="text-6xl font-bold">Hi! I'm Jess</h1>
                     <p className="py-6 text-2xl ">I'm a Full Stack Developer <br />
                         <span>proficient in {technologies[index]}</span></p>
-                    <button className="btn btn-primary animate-wiggle">Resume</button>
+                    <button className="btn btn-primary animate-wiggle" onClick={props.onButtonClick}>Resume</button>
                 </div>
                 <img className=" grayscale max-w-xs max-h-sm rounded-lg shadow-2xl hover:grayscale-0 transition duration-700 delay-150"
                     src={require('../images/Jess-selfie.jpeg')} alt='Jessica Petrey' />
