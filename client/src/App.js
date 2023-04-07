@@ -7,7 +7,6 @@ import Toolbox from './components/Toolbox';
 import Projects from './components/Projects';
 import { useRef, useState } from "react";
 import Resume from './components/Resume';
-import ResumeFile from './components/ResumeFile';
 
 
 function App() {
