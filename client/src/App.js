@@ -20,7 +20,14 @@ function App() {
   const [showResume, setShowResume] = useState(false)
 
   const handleResumeRender = () => {
-    showResume ? setShowResume(false) : setShowResume(true);
+    if(showResume){
+      setShowResume(false);
+      document.getElementById("renderResume").innerHTML="Resume";
+    }
+    else {
+      setShowResume(true);
+      document.getElementById("renderResume").innerHTML="Scroll down!";
+    }
   }
 
   return (
