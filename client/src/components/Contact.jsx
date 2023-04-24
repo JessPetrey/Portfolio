@@ -24,10 +24,10 @@ const Contact = (props) => {
                     <h3 className='text-lg'>CONTACT</h3>
                     <h2 className='text-2xl'>Get In Touch</h2>
                     <div>
-                        <p>I'm always looking for feedback, and to meet others who code. Can't wait to meet you!</p>
-                        <p>Please include your email address, so I can get back to you.</p>
+                        <p>Can't wait to meet you!</p>
                         <form ref={form} onSubmit={handleSubmit} className='form-control'>
                             <input type="text" name="name" placeholder='Your Name' className='my-2' />
+                            <input type="email" name="email" placeholder='Your Email' className='my-2' />
                             <textarea name="message" cols="30" rows="8" placeholder='Message'></textarea>
                             <button type="submit" className='btn'>Send Email</button>
                         </form>
