@@ -24,7 +24,7 @@ const Contact = (props) => {
                     <h3 className='text-lg'>CONTACT</h3>
                     <h2 className='text-2xl'>Get In Touch</h2>
                     <div>
-                        <p>Can't wait to meet you!</p>
+                        <p>Feel free to contact me if you have any questions, or just want to say hi!</p>
                         <form ref={form} onSubmit={handleSubmit} className='form-control'>
                             <input type="text" name="name" placeholder='Your Name' className='my-2' />
                             <input type="email" name="email" placeholder='Your Email' className='my-2' />
