@@ -2,7 +2,7 @@ import React from 'react';
 import ReactPlayer from 'react-player';
 
 const ProjectItem = ({ title, description, icons, githubUrl, videoUrl }) => (
-    <div className=' flex flex-row p-20 rounded-box shadow-lg bg-base-100'>
+    <div className=' flex flex-row p-20 rounded-box shadow-lg shadow-neutral'>
         <div className='max-w-md'>
             <div className="flex-col">
                 <h1 className='text-xl'>{title}</h1>
