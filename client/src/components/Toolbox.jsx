@@ -10,31 +10,31 @@ const Toolbox = (props) => {
                         <h2 className='text-2xl'>My Toolbox and Things I Can Do</h2>
                         <div className='flex flex-row flex-wrap max-w-md'>
                             <div className='text-center px-5'>
-                                <i className="text-6xl fa-brands fa-java"></i>
+                                <i className="text-6xl fa-brands fa-java" alt="Logo for Java"></i>
                                 <p>Java</p>
                             </div>
                             <div className='text-center px-5'>
-                                <i className=" text-6xl fa-brands fa-js"></i>
+                                <i className=" text-6xl fa-brands fa-js" alt="Logo for JavaScript"></i>
                                 <p>JavaScript</p>
                             </div>
                             <div className='text-center px-5'>
-                                <i className=" text-6xl fa-brands fa-node"></i>
+                                <i className=" text-6xl fa-brands fa-node" alt="Logo for Node.js"></i>
                                 <p>Node.js</p>
                             </div>
                             <div className='text-center px-5'>
-                                <i className=" text-6xl fa-brands fa-python"></i>
+                                <i className=" text-6xl fa-brands fa-python" alt="Logo for Python"></i>
                                 <p>Python</p>
                             </div>
                             <div className='text-center px-5'>
-                                <i className=" text-6xl fa-brands fa-html5"></i>
+                                <i className=" text-6xl fa-brands fa-html5" alt="Logo for HTML"></i>
                                 <p>HTML</p>
                             </div>
                             <div className='text-center px-5'>
-                                <i className=" text-6xl fa-brands fa-css3"></i>
+                                <i className=" text-6xl fa-brands fa-css3" alt="Logo for CSS"></i>
                                 <p>CSS</p>
                             </div>
                             <div className='text-center px-5'>
-                                <i className=" text-6xl fa-brands fa-react"></i>
+                                <i className=" text-6xl fa-brands fa-react" alt="Logo for React"></i>
                                 <p>React</p>
                             </div>
                         </div>
