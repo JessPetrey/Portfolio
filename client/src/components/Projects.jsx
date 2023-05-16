@@ -14,7 +14,7 @@ const Projects = (props) => {
                                 <h2 className='text-xl'>StockTrackr</h2>
                                 <p>Inventory management web app helping small
                                     businesses track their inventory in real-time.
-                                    Pair programmed with <a href="https://abrarbiz.net">Abrar Hussain</a>.
+                                    Pair programmed with <a href="https://www.abrardev.com/">Abrar Hussain</a>.
                                 </p>
                             </div>
                             <div className='flex flex-wrap'>
