@@ -14,7 +14,7 @@ const Projects = (props) => {
                                 <h2 className='text-xl'>StockTrackr</h2>
                                 <p>Inventory management web app helping small
                                     businesses track their inventory in real-time.
-                                    Pair programmed with <a href="https://www.abrardev.com/">Abrar Hussain</a>.
+                                    Pair programmed with <a href="https://www.abrardev.com/" target="_blank">Abrar Hussain</a>.
                                 </p>
                             </div>
                             <div className='flex flex-wrap'>
@@ -31,7 +31,7 @@ const Projects = (props) => {
                                     <p>Spring Boot</p>
                                 </div>
                             </div>
-                            <a className='btn' href='https://github.com/sahussain887/stockTrackr'>View Github Repo</a>
+                            <a className='btn' href='https://github.com/sahussain887/stockTrackr' target="_blank">View Github Repo</a>
                         </div>
                         <div className='max-w-sm'>
                             <ReactPlayer url={require('../images/demoVid.mov')} controls={true} muted className='max-w-fit' />
@@ -65,7 +65,7 @@ const Projects = (props) => {
                                 <p>Flask</p>
                             </div>
                         </div>
-                        <a className='btn' href='https://github.com/JessPetrey/Swizzle'>View Github Repo</a>
+                        <a className='btn' href='https://github.com/JessPetrey/Swizzle' target="_blank">View Github Repo</a>
                     </div>
                     <div className='max-w-sm'>
                         <ReactPlayer url={require('../images/ScreenRecordingSwizzle.mov')} controls={true} muted className='max-w-fit' />

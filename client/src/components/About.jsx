@@ -40,7 +40,8 @@ const About = (props) => {
                             looking into bootcamps, and to Coding Dojo where I learned
                             to be self-sufficient, solving problems with code.</p>
                         <p>I'm happiest when creating or working through a new challenge.
-                            Currently, I am honing my skills while looking for work.</p>
+                            Currently, I'm working on getting a startup company off the ground, 
+                            and studying data structures.</p>
                         <button className='btn btn-wide' onClick={() => props.contact.current.scrollIntoView({ behavior: 'smooth' })} >Get in Touch</button>
                     </div>
                 </div>
