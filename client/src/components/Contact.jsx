@@ -1,3 +1,9 @@
+/* This is a React component that creates a contact form. It imports the necessary dependencies,
+including React, useRef, useState, and emailjs. It initializes emailjs with a user ID. It sets up
+state variables for errors, messageSubmitted, and messageLoading. It defines a handleSubmit function
+that sends the form data using emailjs and updates the state variables accordingly. It also defines
+a resetForm function and a validateForm function for form validation. Finally, it returns a JSX
+element that renders the contact form with appropriate error messages and loading messages. */
 import React, { useRef, useState } from 'react';
 import emailjs, { init as initEmailJS } from '@emailjs/browser';
 

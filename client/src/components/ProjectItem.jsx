@@ -1,3 +1,7 @@
+/* This is a React component called `ProjectItem` that takes in props such as `title`, `description`,
+`icons`, `githubUrl`, and `videoUrl`. It renders a div with a title, description, icons, and a link
+to a GitHub repository. If a `videoUrl` prop is provided, it also renders a ReactPlayer component
+with the video. The component is exported as the default export of the module. */
 import React from 'react';
 import ReactPlayer from 'react-player';
 

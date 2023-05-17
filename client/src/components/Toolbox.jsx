@@ -1,3 +1,12 @@
+/**
+ * The Toolbox function returns a React component that displays a list of skills and tools, as well as
+ * information about what the developer is currently working on.
+ * @returns The `Toolbox` component is being returned, which contains JSX elements that render a
+ * section displaying the skills and tools of the developer, as well as information about what they are
+ * currently working on. The skills and tools are displayed using icons and labels, which are mapped
+ * over from an array of data called `skillsIconData`. The component also includes a link to the
+ * developer's GitHub profile.
+ */
 import React from 'react';
 import { skillsIconData } from './SkillsIconData';
 

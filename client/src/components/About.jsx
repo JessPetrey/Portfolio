@@ -1,3 +1,9 @@
+/**
+ * This is a React component that displays information about the author, including a rotating list of
+ * fun facts and a personal story, and includes a button to scroll to the contact section.
+ * @returns The About component is being returned, which contains JSX elements and logic for displaying
+ * information about the author and their background.
+ */
 import React, { useState, useEffect } from 'react';
 
 const About = (props) => {

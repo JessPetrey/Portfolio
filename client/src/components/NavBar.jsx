@@ -1,3 +1,16 @@
+/**
+ * This is a React component for a navigation bar that allows users to scroll to different sections of
+ * a webpage.
+ * @returns The `NavBar` component is being returned, which renders a navigation bar with menu items
+ * that, when clicked, scroll to the corresponding section on the page. The menu items are generated
+ * dynamically based on the `menuItems` array, and the scrolling behavior is handled by the
+ * `scrollToSection` function, which takes an index and uses a ref to scroll to the corresponding
+ * section. The navigation bar is also hidden on mobile devices, but visible on desktop devices.
+ * The `useCallback` hook is used to memoize the `scrollToSection` function. This is because the
+ * `scrollToSection` function is being passed to the `onClick` event of the menu items, which
+ * triggers the function every time the event is triggered. This causes the function to be
+ * re-created every time the event is triggered.
+ */
 import React, { useCallback } from 'react';
 
 import '../index.css';

@@ -1,3 +1,9 @@
+/**
+ * This is a React component that displays a resume and provides options to download it or close it.
+ * @returns A React functional component that renders a div containing a Google Drive download button,
+ * a close button, and an embedded Google Docs iframe displaying a resume. The component also receives
+ * a prop called `onButtonClick` which is a function to be executed when the close button is clicked.
+ */
 import React from 'react'
 import '../index.css'
 

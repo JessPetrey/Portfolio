@@ -1,3 +1,10 @@
+/**
+ * The Projects function returns a React component that renders a list of project items with their
+ * respective titles, descriptions, icons, GitHub URLs, and video URLs.
+ * @returns The `Projects` component is returning a list of `ProjectItem` components, each with their
+ * own set of props passed down from the `projects` array. The `ProjectItem` component is responsible
+ * for rendering the title, description, icons, githubUrl, and videoUrl for each project.
+ */
 import React from 'react';
 import ProjectItem from './ProjectItem';
 import { skillsIconData } from './SkillsIconData';
