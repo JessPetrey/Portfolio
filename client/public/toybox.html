@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fireworks</title>
+    <style>
+        body {
+            margin: 0;
+            background: black;
+            overflow: hidden;
+        }
+
+        canvas {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="animation"></canvas>
+    <script>
+        const canvas = document.getElementById("animation");
+const ctx = canvas.getContext("2d");
+
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+let particles = [];
+const colors = ["#FFD700", "#FFC107", "#FFAA00", "#FFFACD", "#D4AF37"];
+let hue = 100;
+
+function createParticle(x, y) {
+    const size = Math.random() * 6 + 9;  // Slightly larger particles
+    const color = colors[Math.floor(Math.random() * colors.length)];
+    const speed = Math.random() * 4 + 1.5;  // Faster movement
+    const angle = Math.random() * 2 * Math.PI;
+    const lifespan = Math.random() * 50 + 30; // Lifespan between 50–130 frames
+    particles.push({ x, y, size, color, speed, angle, lifespan });
+}
+
+function drawParticle(p) {
+    const gradient = ctx.createRadialGradient(p.x, p.y, 0, p.x, p.y, p.size);
+    gradient.addColorStop(0, p.color);  // Base color
+    gradient.addColorStop(1, "rgba(0, 0, 0, 0)");  // Fade to transparent
+
+    ctx.beginPath();
+    ctx.arc(p.x, p.y, p.size, 0, Math.PI * 6);
+    ctx.fillStyle = gradient;
+    ctx.shadowBlur = 25;  // Moderate glow
+    ctx.shadowColor = p.color;  // Glow tied to particle color
+    ctx.fill();
+}
+
+function updateParticle(p, index) {
+    p.x += Math.cos(p.angle) * p.speed;
+    p.y += Math.sin(p.angle) * p.speed;
+
+    if (p.size > 9.8) {
+        p.size *= 0.45;  // Gradual shrink
+    }
+
+    p.lifespan -= 1.4;  // Decrease lifespan
+
+    // Remove particle if lifespan is 0
+    if (p.lifespan <= 0) {
+        particles.splice(index, 1);
+    }
+}
+function wrapText(context, text, x, y, maxWidth, lineHeight) {
+    const words = text.split(" ");
+    let line = "";
+    let lines = [];
+
+    for (let i = 0; i < words.length; i++) {
+        const testLine = line + words[i] + " ";
+        const metrics = context.measureText(testLine);
+        const testWidth = metrics.width;
+
+        if (testWidth > maxWidth && i > 0) {
+            lines.push(line);
+            line = words[i] + " ";
+        } else {
+            line = testLine;
+        }
+    }
+    lines.push(line); // Push the last line
+
+    lines.forEach((line, index) => {
+        context.fillText(line, x, y + index * lineHeight);
+    });
+}
+function drawText() {
+    const message = "SUCCESS IS THE SUM OF SMALL EFFORTS, REPEATED DAY IN AND DAY OUT";
+    ctx.font = "bold 28px 'Courier New'";
+    ctx.fillStyle = "white";
+    ctx.textAlign = "center";
+    ctx.textBaseline = "middle";
+    ctx.shadowBlur = 10;
+    ctx.shadowColor = "rgba(0, 0, 0, 0.7)";  // Black shadow
+
+    const maxWidth = canvas.width * 0.8; // Wrap text to 80% of canvas width
+    const lineHeight = 50; // Line height in pixels
+
+    wrapText(ctx, message, canvas.width / 2, canvas.height / 2 - lineHeight, maxWidth, lineHeight);
+    ctx.shadowBlur = 0;  // Reset shadow after drawing text
+}
+
+function loop() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    drawText(); // Call the drawText function to render the text
+
+    particles.forEach((p, i) => {
+        drawParticle(p);
+        updateParticle(p, i);
+
+        // Remove particles that are off-screen
+        if (p.x < 0 || p.x > canvas.width || p.y < 0 || p.y > canvas.height) {
+            particles.splice(i, 1);
+        }
+    });
+    requestAnimationFrame(loop);
+}
+
+setInterval(() => {
+    const x = Math.random() * canvas.width;
+    const y = Math.random() * canvas.height;
+
+    // Keep particle count lower
+    if (particles.length < 100) {  // Reduce lingering particles
+        for (let i = 0; i < 30; i++) {  // Slightly fewer particles per burst
+            createParticle(x, y);
+        }
+    }
+}, Math.random() * 200 + 100);  // Distinct bursts
+
+loop();
+    </script>
+</body>
+
+</html>

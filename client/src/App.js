@@ -7,7 +7,8 @@ import Toolbox from './components/Toolbox';
 import Projects from './components/Projects';
 import { useRef, useState } from "react";
 import Resume from './components/Resume';
-
+import { Route, Routes } from "react-router-dom";
+import ToyBox from "./components/ToyBox";
 
 function App() {
   const sectionRefs = [
@@ -16,29 +17,40 @@ function App() {
     useRef(null),
     useRef(null),
     useRef(null)
-  ]
-  const [showResume, setShowResume] = useState(false)
+  ];
+  const [showResume, setShowResume] = useState(false);
 
   const handleResumeRender = () => {
-    if(showResume){
+    if (showResume) {
       setShowResume(false);
-      document.getElementById("renderResume").innerHTML="Resume";
-    }
-    else {
+      document.getElementById("renderResume").innerHTML = "Resume";
+    } else {
       setShowResume(true);
-      document.getElementById("renderResume").innerHTML="Scroll down!";
+      document.getElementById("renderResume").innerHTML = "Scroll down!";
     }
-  }
+  };
 
   return (
-    <div data-theme='cupcake'>
+    <div>
       <NavBar sectionRefs={sectionRefs} />
-      <Home sectionRef={sectionRefs[0]} onButtonClick={handleResumeRender} />
-      { showResume ? <Resume onButtonClick={handleResumeRender} /> : null }
-      <About sectionRef={sectionRefs[1]} contact={sectionRefs[4]} />
-      <Toolbox sectionRef={sectionRefs[2]} />
-      <Projects sectionRef={sectionRefs[3]} />
-      <Contact contact={sectionRefs[4]} />
+      <Routes>
+        {/* Home route */}
+        <Route
+          path="/"
+          element={
+            <div>
+              <Home sectionRef={sectionRefs[0]} onButtonClick={handleResumeRender} />
+              {showResume ? <Resume onButtonClick={handleResumeRender} /> : null}
+              <About sectionRef={sectionRefs[1]} contact={sectionRefs[4]} />
+              <Toolbox sectionRef={sectionRefs[2]} />
+              <Projects sectionRef={sectionRefs[3]} />
+              <Contact contact={sectionRefs[4]} />
+            </div>
+          }
+        />
+        {/* Toy Box route */}
+        <Route path="/toybox" element={<ToyBox />} />
+      </Routes>
       <Footer />
     </div>
   );
