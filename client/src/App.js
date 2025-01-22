@@ -8,7 +8,8 @@ import Projects from './components/Projects';
 import { useRef, useState } from "react";
 import Resume from './components/Resume';
 import { Route, Routes } from "react-router-dom";
-import ToyBox from "./components/ToyBox";
+import ToyBox from "./components/ToyBoxFolder/ToyBox";
+import Fireworks from "./components/ToyBoxFolder/Fireworks";
 
 function App() {
   const sectionRefs = [
@@ -50,6 +51,7 @@ function App() {
         />
         {/* Toy Box route */}
         <Route path="/toybox" element={<ToyBox />} />
+        <Route path="/toybox/fireworks" element={<Fireworks />} />
       </Routes>
       <Footer />
     </div>
